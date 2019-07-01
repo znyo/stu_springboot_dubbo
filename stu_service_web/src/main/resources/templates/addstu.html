@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>添加学生</h1>
+   <form action="/stu/addstu"  method="post">
+       姓名：<input type="text" name="name"/><br/>
+       年龄：<input type="text" name="age"/><br/>
+       生日：<input type="date" name="birthday"/><br/>
+       所属班级:<select name="cid">
+       <option th:each="classes : ${classes}" th:value="${classes.id}" th:text="${classes.cname}">
+
+       </option>
+   </select><br/>
+       <input type="submit" value="添加"/><br/>
+   </form>
+
+</body>
+</html>

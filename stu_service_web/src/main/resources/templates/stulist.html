@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+     <table border="1">
+         <tr >
+             <th>姓名</th>
+             <th>年龄</th>
+             <th>生日</th>
+             <th>所属班级</th>
+         </tr>
+         <tr th:each="stu : ${list}">
+             <td th:text="${stu.name}"></td>
+             <td th:text="${stu.age}"></td>
+             <td th:text="${#dates.format(stu.birthday,'yyyy-MM-dd')}"></td>
+             <td th:text="${stu.classes.cname}"></td>
+         </tr>
+     </table>
+
+</body>
+</html>

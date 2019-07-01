@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="stu_service_API" />
+        <module name="stu_service_classes" />
+        <module name="stu_service_student" />
+        <module name="stu_service_web" />
+        <module name="stu_entity" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="stu_entity" target="1.8" />
+      <module name="stu_service_API" target="1.8" />
+      <module name="stu_service_api" target="1.8" />
+      <module name="stu_service_classes" target="1.8" />
+      <module name="stu_service_student" target="1.8" />
+      <module name="stu_service_web" target="1.8" />
+      <module name="stu_springboot_dubbo" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="stu_entity" options="-parameters" />
+      <module name="stu_service_API" options="-parameters" />
+      <module name="stu_service_api" options="-parameters" />
+      <module name="stu_service_classes" options="-parameters" />
+      <module name="stu_service_student" options="-parameters" />
+      <module name="stu_service_web" options="-parameters" />
+      <module name="stu_springboot_dubbo" options="-parameters" />
+    </option>
+  </component>
+</project>
